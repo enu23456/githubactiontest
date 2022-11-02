@@ -1,3 +1,5 @@
+# "this is pen", "this is apple"と出力するだけ
+
 name: learn-github-actions
 on: [push]
 jobs:
