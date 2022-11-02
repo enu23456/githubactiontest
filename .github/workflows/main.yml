@@ -1,7 +1,11 @@
 # "this is pen", "this is apple"と出力するだけ
 
 name: learn-github-actions
-on: [push, workflow_dispatch]
+
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
