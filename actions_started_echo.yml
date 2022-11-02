@@ -1,0 +1,10 @@
+# "this is pen", "this is apple"と出力するだけ
+
+name: learn-github-actions
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is pen"
+      - run: echo "this is apple"
