@@ -4,7 +4,7 @@ name: learn-github-actions
 
 on:
   schedule:
-    - cron:  '15 * * * *'
+    - cron:  '15,30,45 * * * *'
 
 jobs:
   check-bats-version:
