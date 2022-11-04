@@ -4,7 +4,16 @@
 
 ```mermaid
 flowchart TD
-    Start --> Stop
-    Start --> PointA
-    PointA --- Stop
+    Start --> Run
+    Run --> Stop
+```
+
+## PlantUML
+
+```plantuml
+@startuml
+:Start;
+:Run;
+:Stop;
+@enduml
 ```
