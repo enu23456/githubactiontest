@@ -1,0 +1,24 @@
+name: Action Sample
+
+on:
+  workflow_dispatch:
+
+env:
+  GREETING: Hello
+
+jobs:
+  greet_linux:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ${{env.GREETING}}-from-linux
+        run: echo "$GREETING World!"
+        
+  greet_windows:
+
+    runs-on: windows-latest
+
+    steps:
+      - name: ${{env.GREETING}}-from-windows
+        run: echo "$env:GREETING World!"
