@@ -3,12 +3,13 @@ name: Action Sample
 on:
   workflow_dispatch:
 
+env:
+  GREETING: Hello
+
 jobs:
   greet:
 
     runs-on: ubuntu-latest
-    env:
-      GREETING: Hello
 
     steps:
       - name: GREETING
