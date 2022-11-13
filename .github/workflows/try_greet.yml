@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: ${{GREETING}}
+      - name: ${{env.GREETING}}
         run: echo "Hello World!"
