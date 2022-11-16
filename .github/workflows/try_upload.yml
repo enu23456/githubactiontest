@@ -8,6 +8,7 @@ jobs:
  
     runs-on: ubuntu-latest
     steps:
+      - run: ls
       - uses: actions/upload-artifact@v2
         with:
           name: README_uploaded
