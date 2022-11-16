@@ -1,0 +1,14 @@
+name: Upload file
+
+on:
+  workflow_dispatch:
+
+jobs:
+ upload:
+ 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/upload-artifact@v2
+        with:
+          name: README.md
+          path: upload-README.md.zip
