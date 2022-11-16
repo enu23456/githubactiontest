@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: actions/upload-artifact@v2
         with:
-          name: README.md
-          path: upload-README.md.zip
+          name: README_uploaded
+          path: README.md
